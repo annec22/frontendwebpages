@@ -1,0 +1,235 @@
+body{
+  font-family: Malgun Gothic, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+}
+
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button{
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 38px;
+  border: none;
+  font-family: Malgun Gothic, sans-serif;
+}
+
+.button_01{
+  background: coral;
+  color: #f5f5f5;
+}
+
+.button_02{
+  background: coral;
+  color: #f5f5f5;
+}
+
+.brown{
+  padding: 15px;
+  background: #ab987a;
+  color: #0f1626;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dark{
+  padding: 15px;
+  background: #0f1626;
+  color: #f5f5f5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header */
+header{
+  background: #0f1626;
+  color: #f5f5f5;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: coral 3px solid;
+}
+
+header a{
+  color: #f5f5f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #companyname{
+  float: left;
+}
+
+header #companyname h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: coral;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #ab987a;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover, button:hover{
+  background: #f53240;
+}
+
+/* Showcase */
+
+#content{
+  min-height: 400px;
+  background: url(../img/content.png) no-repeat 0 -100px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+#content h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#content p{
+  font-size: 20px;
+}
+
+#newsletter{
+  padding: 15px;
+  color: #f5f5f5;
+  background: #0f1626;
+}
+
+#newsletter h1{
+  float: left;
+}
+
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* features */
+#featured{
+  margin-top: 20px;
+}
+#featured .feats{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#featured .feats img{
+  width: 50px;
+}
+
+
+/* Main col */
+article#main-col{
+  float:left;
+  width: 65%;
+}
+
+/* Contact Form */
+aside#contact_form{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#contact_form .contact_message_form input, aside#contact_form .contact_message_form textarea{
+  padding: 5px;
+  width: 90%;
+}
+
+
+/* Article What we offer */
+
+ul#services li{
+  list-style: none;
+  background: #ab987a;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #f5f5f5;
+  background-color: coral;
+}
+
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #companyname,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #featured .feats,
+  article#main-col,
+  aside#contact_form{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #newsletter button,
+  .contact_message_form input,
+  .contact_message_form textarea{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], aside#contact_form textarea{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  #content h1{
+    margin-top: 40px;
+  }
+
+  #content{
+    background: url(../img/content.png) no-repeat 80%;
+  }
+}
